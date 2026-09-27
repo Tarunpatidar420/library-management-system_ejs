@@ -1,0 +1,88 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        Pay Fine
+    </h2>
+
+    <div class="form-grid">
+
+        <!-- Transaction ID -->
+        <div class="form-row">
+
+            <label>
+                Transaction ID
+            </label>
+
+            <input
+                id="payTransactionId"
+                disabled
+            >
+
+        </div>
+
+        <!-- Fine Calculated -->
+        <div class="form-row">
+
+            <label>
+                Fine Calculated
+            </label>
+
+            <input
+                id="payFineCalculated"
+                disabled
+            >
+
+        </div>
+
+        <!-- Fine Paid -->
+        <div class="form-row">
+
+            <label class="checkbox-row">
+
+                <input
+                    id="finePaid"
+                    type="checkbox"
+                >
+
+                Fine Paid
+
+            </label>
+
+        </div>
+
+        <!-- Remarks -->
+        <div class="form-row">
+
+            <label>
+                Remarks
+            </label>
+
+            <textarea
+                id="payRemarks"
+            ></textarea>
+
+        </div>
+
+        <!-- Messages -->
+        <p
+            id="payMessage"
+            class="success-text"
+        ></p>
+
+        <p
+            id="payError"
+            class="error-text"
+        ></p>
+
+        <!-- Confirm Button -->
+        <button
+            class="btn btn-primary"
+            id="payFineBtn"
+            type="button"
+        >
+            Confirm
+        </button>
+
+    </div>
+
+</div>

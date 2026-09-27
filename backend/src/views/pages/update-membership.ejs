@@ -1,0 +1,137 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        Update Membership
+    </h2>
+
+    <div class="form-grid">
+
+        <!-- Membership Number -->
+        <div class="form-row">
+
+            <label>
+                Membership Number
+            </label>
+
+            <input
+                id="membershipNumber"
+                placeholder="Enter membership number"
+            >
+
+        </div>
+
+        <!-- Search Button -->
+        <div class="btn-group">
+
+            <button
+                class="btn btn-primary"
+                id="searchMembership"
+            >
+                Search
+            </button>
+
+        </div>
+
+        <!-- Error Message -->
+        <p
+            id="updateMembershipError"
+            class="error-text"
+        ></p>
+
+        <!-- Success Message -->
+        <p
+            id="updateMembershipMessage"
+            class="success-text"
+        ></p>
+
+        <!-- Membership Details -->
+        <div
+            id="membershipDetails"
+            class="hidden stack"
+        >
+
+            <div class="detail-card">
+
+                <p>
+                    <strong>
+                        Name:
+                    </strong>
+
+                    <span data-field="memberName"></span>
+                </p>
+
+                <p>
+                    <strong>
+                        Email:
+                    </strong>
+
+                    <span data-field="email"></span>
+                </p>
+
+                <p>
+                    <strong>
+                        Status:
+                    </strong>
+
+                    <span data-field="status"></span>
+                </p>
+
+                <p>
+                    <strong>
+                        End Date:
+                    </strong>
+
+                    <span data-field="endDate"></span>
+                </p>
+
+            </div>
+
+            <!-- Extension Type -->
+            <div class="form-row">
+
+                <label>
+                    Extension Type
+                </label>
+
+                <select id="extensionType">
+
+                    <option value="6_months">
+                        6 Months
+                    </option>
+
+                    <option value="1_year">
+                        1 Year
+                    </option>
+
+                    <option value="2_years">
+                        2 Years
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="btn-group">
+
+                <button
+                    class="btn btn-primary"
+                    id="extendMembership"
+                >
+                    Extend Membership
+                </button>
+
+                <button
+                    class="btn btn-danger"
+                    id="cancelMembership"
+                >
+                    Cancel Membership
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

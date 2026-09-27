@@ -1,0 +1,103 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        Issue Book
+    </h2>
+
+    <form
+        class="form-grid"
+        id="issueBookForm"
+    >
+
+        <div class="form-row">
+
+            <label>
+                Book Name
+            </label>
+
+            <select
+                id="issueItemId"
+                name="itemId"
+            >
+
+                <option value="">
+                    Select Book
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-row">
+
+            <label>
+                Author
+            </label>
+
+            <input
+                id="issueAuthor"
+                disabled
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <label>
+                Issue Date
+            </label>
+
+            <input
+                id="issueDate"
+                name="issueDate"
+                type="date"
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <label>
+                Return Date
+            </label>
+
+            <input
+                id="returnDate"
+                name="returnDate"
+                type="date"
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <label>
+                Remarks
+            </label>
+
+            <textarea
+                name="remarks"
+            ></textarea>
+
+        </div>
+
+        <p
+            id="issueMessage"
+            class="success-text"
+        ></p>
+
+        <p
+            id="issueError"
+            class="error-text"
+        ></p>
+
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Confirm Issue
+        </button>
+
+    </form>
+
+</div>

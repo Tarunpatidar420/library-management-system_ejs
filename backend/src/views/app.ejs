@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <% if (isProtected) { %>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="/">Library Management System</a>
+      <button class="mobile-menu-btn" type="button" id="mobileMenuBtn">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <span id="roleNav"></span>
+        <a class="nav-link" href="/reports">Reports</a>
+        <a class="nav-link" href="/transactions">Transactions</a>
+        <button class="nav-link nav-button" id="logoutBtn" type="button">Logout</button>
+      </nav>
+    </div>
+  </header>
+  <% } %>
+
+  <main class="container" id="app" data-page="<%= page %>" data-protected="<%= isProtected ? '1' : '0' %>" data-report-key="<%= reportKey || '' %>">
+    <%- include('pages/' + page) %>
+  </main>
+
+  <script>window.APP_PAGE = <%- JSON.stringify(page) %>;</script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

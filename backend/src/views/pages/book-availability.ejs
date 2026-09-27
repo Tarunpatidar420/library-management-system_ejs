@@ -1,0 +1,57 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        Check Book Availability
+    </h2>
+
+    <form
+        class="form-grid"
+        id="availabilityForm"
+    >
+
+        <div class="form-row">
+
+            <label>
+                Book Name
+            </label>
+
+            <input
+                type="text"
+                name="title"
+            >
+
+        </div>
+
+        <div class="form-row">
+
+            <label>
+                Author
+            </label>
+
+            <input
+                type="text"
+                name="author"
+            >
+
+        </div>
+
+        <p
+            id="availabilityError"
+            class="error-text"
+        ></p>
+
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Search
+        </button>
+
+    </form>
+
+    <div
+        id="availabilityResults"
+        class="table-wrap mt"
+    ></div>
+
+</div>

@@ -1,0 +1,305 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        User Management
+    </h2>
+
+    <div class="form-row">
+
+        <label>
+            Mode
+        </label>
+
+        <select id="userMode">
+
+            <option value="new">
+                New User
+            </option>
+
+            <option value="existing">
+                Existing User
+            </option>
+
+        </select>
+
+    </div>
+
+    <p
+        id="userMessage"
+        class="success-text mt"
+    ></p>
+
+    <p
+        id="userError"
+        class="error-text"
+    ></p>
+
+    <div
+        id="newUserPanel"
+        class="mt"
+    >
+
+        <form
+            class="form-grid"
+            id="createUserForm"
+        >
+
+            <div class="form-row">
+
+                <label>
+                    Name
+                </label>
+
+                <input
+                    name="name"
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    name="email"
+                    type="email"
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <label>
+                    Password
+                </label>
+
+                <div class="input-action">
+
+                    <input
+                        id="userPassword"
+                        name="password"
+                        type="password"
+                        required
+                    >
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-toggle="userPassword"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="detail-card">
+
+                <strong>
+                    Password Rules:
+                </strong>
+
+                <ul>
+
+                    <li>
+                        8 to 16 characters
+                    </li>
+
+                    <li>
+                        Must start with a capital letter
+                    </li>
+
+                    <li>
+                        Only letters, numbers and @ # $ % &
+                    </li>
+
+                    <li>
+                        1 to 3 special characters
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="form-row">
+
+                <label>
+                    Role
+                </label>
+
+                <select name="role">
+
+                    <option value="user">
+                        User
+                    </option>
+
+                    <option value="admin">
+                        Admin
+                    </option>
+
+                </select>
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+            >
+                Create User
+            </button>
+
+        </form>
+
+    </div>
+
+    <div
+        id="existingUserPanel"
+        class="hidden mt"
+    >
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Name
+                        </th>
+
+                        <th>
+                            Email
+                        </th>
+
+                        <th>
+                            Role
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Created
+                        </th>
+
+                        <th>
+                            Actions
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="usersBody">
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div
+            id="editUserPanel"
+            class="page-card mt hidden"
+        >
+
+            <h3>
+                View / Edit User
+            </h3>
+
+            <form
+                class="form-grid mt"
+                id="editUserForm"
+            >
+
+                <input
+                    type="hidden"
+                    name="id"
+                >
+
+                <div class="form-row">
+
+                    <label>
+                        Name
+                    </label>
+
+                    <input
+                        name="name"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-row">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        name="email"
+                        type="email"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-row">
+
+                    <label>
+                        Role
+                    </label>
+
+                    <select name="role">
+
+                        <option value="user">
+                            User
+                        </option>
+
+                        <option value="admin">
+                            Admin
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-row">
+
+                    <label class="checkbox-row">
+
+                        <input
+                            name="isActive"
+                            type="checkbox"
+                        >
+
+                        Active User
+
+                    </label>
+
+                </div>
+
+                <button
+                    class="btn btn-primary"
+                >
+                    Update User
+                </button>
+
+            </form>
+
+        </div>
+
+        <div
+            id="historyPanel"
+            class="page-card mt hidden"
+        ></div>
+
+    </div>
+
+</div>

@@ -1,0 +1,140 @@
+<div class="auth-wrapper">
+
+    <div class="auth-card">
+
+        <h2 class="page-title">
+            Register
+        </h2>
+
+        <form
+            class="form-grid"
+            id="registerForm"
+        >
+
+            <!-- Name -->
+            <div class="form-row">
+
+                <label>
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter full name"
+                    required
+                >
+
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter email"
+                    required
+                >
+
+            </div>
+
+            <!-- Password -->
+            <div class="form-row">
+
+                <label>
+                    Password
+                </label>
+
+                <div class="input-action">
+
+                    <input
+                        id="regPassword"
+                        name="password"
+                        type="password"
+                        required
+                    >
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-toggle="regPassword"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Confirm Password -->
+            <div class="form-row">
+
+                <label>
+                    Confirm Password
+                </label>
+
+                <div class="input-action">
+
+                    <input
+                        id="regConfirm"
+                        name="confirmPassword"
+                        type="password"
+                        required
+                    >
+
+                    <button
+                        class="btn btn-secondary"
+                        type="button"
+                        data-toggle="regConfirm"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Error Message -->
+            <p
+                id="registerError"
+                class="error-text"
+            ></p>
+
+            <!-- Success Message -->
+            <p
+                id="registerMessage"
+                class="success-text"
+            ></p>
+
+            <!-- Register Button -->
+            <button
+                class="btn btn-primary"
+                type="submit"
+            >
+                Register
+            </button>
+
+        </form>
+
+        <!-- Login Link -->
+        <div class="mt muted">
+
+            Already have an account?
+
+            <a
+                class="text-link"
+                href="/login"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

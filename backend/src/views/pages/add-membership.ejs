@@ -1,0 +1,124 @@
+<div class="page-card">
+
+    <h2 class="page-title">
+        Add Membership
+    </h2>
+
+    <form
+        class="form-grid"
+        id="addMembershipForm"
+    >
+
+        <div class="form-row">
+            <label>
+                Membership Number
+            </label>
+
+            <input
+                type="text"
+                name="membershipNumber"
+                required
+            >
+        </div>
+
+        <div class="form-row">
+            <label>
+                Member Name
+            </label>
+
+            <input
+                type="text"
+                name="memberName"
+                required
+            >
+        </div>
+
+        <div class="form-row">
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                name="email"
+                required
+            >
+        </div>
+
+        <div class="form-row">
+            <label>
+                Phone
+            </label>
+
+            <input
+                type="tel"
+                name="phone"
+                required
+            >
+        </div>
+
+        <div class="form-row">
+            <label>
+                Address
+            </label>
+
+            <textarea
+                name="address"
+                required
+            ></textarea>
+        </div>
+
+        <div class="form-row">
+            <label>
+                Duration
+            </label>
+
+            <select name="durationType">
+
+                <option value="6_months">
+                    6 Months
+                </option>
+
+                <option value="1_year">
+                    1 Year
+                </option>
+
+                <option value="2_years">
+                    2 Years
+                </option>
+
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label>
+                Start Date
+            </label>
+
+            <input
+                type="date"
+                name="startDate"
+                required
+            >
+        </div>
+
+        <p
+            id="membershipMessage"
+            class="success-text"
+        ></p>
+
+        <p
+            id="membershipError"
+            class="error-text"
+        ></p>
+
+        <button
+            type="submit"
+            class="btn btn-primary"
+        >
+            Add Membership
+        </button>
+
+    </form>
+
+</div>
